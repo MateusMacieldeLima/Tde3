@@ -59,7 +59,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int seed = 12345; // Seed para replicabilidade
+        int seed = 12345; 
         Random random = new Random(seed);
 
         int[] sizes = {1000, 10000, 100000, 500000, 1000000};
@@ -79,7 +79,7 @@ public class MergeSort {
                 long startTime = System.nanoTime();
                 mergeSort(array, 0, array.length - 1);
                 long endTime = System.nanoTime();
-                long duration = (endTime - startTime) / 1000000; // Tempo em milissegundos
+                long duration = (endTime - startTime) / 1000000;
 
                 writer.write(size + "," + duration + "," + trocaCount + "," + iteracaoCount + "\n");
 
